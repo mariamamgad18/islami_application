@@ -8,4 +8,5 @@ class Appimages {
   static const String onboarding4 = "assets/images/douaa.png";
   static const String onboarding5 = "assets/images/mice.png";
   static const String islamilogo = "assets/images/islamilogo.png";
+  static const String sebhapagebackground = "assets/images/Sebha Screen.png";
 }
