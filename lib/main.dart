@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/ui/OnboardingScreens.dart';
 import 'package:islami/ui/home/HomeScreen.dart';
+import 'package:islami/ui/home/SebhaPage.dart';
 import 'package:islami/utils/AllRouteNames.dart';
 
 void main() {
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
       initialRoute: Allroutenames.OnBoardingScreenRoutename,
       routes: {
         Allroutenames.HomeScreenRoutename: (context) => Homescreen(),
-        Allroutenames.OnBoardingScreenRoutename: (context) => OnBoardingPage()
+        Allroutenames.OnBoardingScreenRoutename: (context) => OnBoardingPage(),
+        Allroutenames.roteteRoutename: (context) => sebhapage()
+
       },
     );
   }
