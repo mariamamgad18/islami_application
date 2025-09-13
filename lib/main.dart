@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/ui/OnboardingScreens.dart';
+import 'package:islami/ui/home/HadeethPage.dart';
 import 'package:islami/ui/home/HomeScreen.dart';
 import 'package:islami/ui/home/SearchQuranPage.dart';
 import 'package:islami/ui/home/SebhaPage.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         Allroutenames.OnBoardingScreenRoutename: (context) => OnBoardingPage(),
         Allroutenames.roteteRoutename: (context) => sebhapage(),
         Allroutenames.SearchQuranpage: (context) => searchquranpage(),
+        Allroutenames.Hadeethpage: (context) => Hadeethpage(),
       },
     );
   }
