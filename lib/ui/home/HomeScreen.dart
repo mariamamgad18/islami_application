@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/utils/AppColors.dart';
 import 'package:islami/utils/AppImages.dart';
 
+import 'SearchQuranPage.dart';
 import 'SebhaPage.dart';
 import 'SelectedContainer.dart';
 
@@ -14,7 +15,7 @@ class _HomescreenState extends State<Homescreen> {
   int selectedIndex = 0;
 
   final List<Widget> _pages = [
-    sebhapage(),
+    searchquranpage(),
     sebhapage(),
     sebhapage(),
     sebhapage(),
