@@ -26,4 +26,11 @@ class Appimages {
 
   static const String hadeethcardbackground = "assets/images/Hadith Card.png";
   static const String hadeethbackground = "assets/images/Hadeth Screen.png";
+
+  static const String sebhabody = "assets/images/SebhaBody 1.png";
+
+  static const String pauseimage = "assets/images/Group 2.png";
+  static const String resumeimage = "assets/images/Group 3.png";
+
+  static const String RadioBackground = "assets/images/RadioScreen.png";
 }
