@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/ui/OnboardingScreens.dart';
 import 'package:islami/ui/home/HadeethPage.dart';
 import 'package:islami/ui/home/HomeScreen.dart';
+import 'package:islami/ui/home/RadioPage.dart';
 import 'package:islami/ui/home/SearchQuranPage.dart';
 import 'package:islami/ui/home/SebhaPage.dart';
 import 'package:islami/utils/AllRouteNames.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         Allroutenames.roteteRoutename: (context) => sebhapage(),
         Allroutenames.SearchQuranpage: (context) => searchquranpage(),
         Allroutenames.Hadeethpage: (context) => Hadeethpage(),
+        Allroutenames.Radiopage: (context) => Radiopage(),
       },
     );
   }

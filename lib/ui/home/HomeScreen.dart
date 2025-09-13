@@ -3,6 +3,7 @@ import 'package:islami/utils/AppColors.dart';
 import 'package:islami/utils/AppImages.dart';
 
 import 'HadeethPage.dart';
+import 'RadioPage.dart';
 import 'SearchQuranPage.dart';
 import 'SebhaPage.dart';
 import 'SelectedContainer.dart';
@@ -19,7 +20,7 @@ class _HomescreenState extends State<Homescreen> {
     searchquranpage(),
     Hadeethpage(),
     sebhapage(),
-    sebhapage(),
+    Radiopage(),
     sebhapage(),
   ];
 

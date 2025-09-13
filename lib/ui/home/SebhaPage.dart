@@ -49,56 +49,65 @@ class _sebhapageState extends State<sebhapage> {
             height: double.infinity,
             width: double.infinity,
           ),
-          Column(
-            children: [
-              Image.asset(
-                Appimages.islamilogo,
-                fit: BoxFit.fill,
-                height: 171,
-                width: 291,
-              ),
-              Text(
-                "سَبِّحِ اسْمَ رَبِّكَ الأعلى ",
-                style: TextStyle(
-                  color: Appcolors.whitecolor,
-                  fontSize: 36,
-                  fontWeight: FontWeight.w700,
+          Center(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 60, left: 60),
+                  child: Image.asset(
+                    Appimages.islamilogo,
+                    fit: BoxFit.fill,
+                    width: 289,
+                    height: 129,
+                  ),
                 ),
-              ),
-              Expanded(
-                child: InkWell(
-                  onTap: countTasbeeh,
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      RotateImages(angle: angle),
-                      Column(
-                        mainAxisSize: MainAxisSize.min,
+                Text(
+                  "سَبِّحِ اسْمَ رَبِّكَ الأعلى ",
+                  style: TextStyle(
+                    color: Appcolors.whitecolor,
+                    fontSize: 36,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                Expanded(
+                  child: InkWell(
+                    onTap: countTasbeeh,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          left: 20.0, right: 20, top: 10, bottom: 70),
+                      child: Stack(
+                        alignment: Alignment.center,
                         children: [
-                          Text(
-                            tasbeeh[index],
-                            style: TextStyle(
-                              color: Appcolors.whitecolor,
-                              fontSize: 36,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                          SizedBox(height: 20),
-                          Text(
-                            counter.toString(),
-                            style: TextStyle(
-                              color: Appcolors.whitecolor,
-                              fontSize: 36,
-                              fontWeight: FontWeight.w700,
-                            ),
+                          RotateImages(angle: angle),
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                tasbeeh[index],
+                                style: TextStyle(
+                                  color: Appcolors.whitecolor,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(height: 20),
+                              Text(
+                                counter.toString(),
+                                style: TextStyle(
+                                  color: Appcolors.whitecolor,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
