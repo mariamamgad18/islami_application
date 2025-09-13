@@ -23,4 +23,7 @@ class Appimages {
   static const String SuraNumberContainer = "assets/images/Sura Number.png";
   static const String Surareadingpage =
       "assets/images/Soura Details Screen.png";
+
+  static const String hadeethcardbackground = "assets/images/Hadith Card.png";
+  static const String hadeethbackground = "assets/images/Hadeth Screen.png";
 }

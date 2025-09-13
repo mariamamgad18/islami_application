@@ -6,8 +6,14 @@ import '../../utils/AppImages.dart';
 class quranreadingpage extends StatelessWidget {
   String ENSuraTitle;
   String ARSuraTitle;
+  String Content;
 
-  quranreadingpage({required this.ENSuraTitle, required this.ARSuraTitle});
+  quranreadingpage({
+    required this.ENSuraTitle,
+    required this.ARSuraTitle,
+    this.Content =
+        "[1] بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ [2] الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ [3] الرَّحْمَنِ الرَّحِيمِ [4] مَالِكِ يَوْمِ الدِّينِ [5] إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ [6] اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ [7] صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّين",
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +54,16 @@ class quranreadingpage extends StatelessWidget {
 
             Text(
               ARSuraTitle,
+              style: TextStyle(
+                color: Appcolors.biegecolor,
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 30),
+            Text(
+              Content,
               style: TextStyle(
                 color: Appcolors.biegecolor,
                 fontSize: 20,
